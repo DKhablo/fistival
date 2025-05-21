@@ -27,7 +27,6 @@ def add_performance(data: Dict) -> None:
     if not data["participants"]:
         print("❌ Нет участников! Сначала добавьте их.")
         return
-
     print("\nСписок участников:")
     for i, participant in enumerate(data["participants"], 1):
         print(f"{i}. {participant['name']} ({participant['group']})")
